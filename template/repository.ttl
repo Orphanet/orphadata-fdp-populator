@@ -1,0 +1,15 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix r3d: <http://www.re3data.org/schema/3-0#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix fdp: <http://rdf.biosemantics.org/ontologies/fdp-o#>.
+@prefix datacite: <http://purl.org/spar/datacite/>.
+
+<> rdf:type r3d:Repository;
+    dct:title "Orphadata FAIR Data Point";
+    dct:description "FAIR Data Point to host free orphanet's dataset(s). These data sets are a partial extraction of the Orphanet data base, freely accessible at www.orpha.net (for consultation purposes only). The data sets are available in nine languages: English, French, German, Italian, Portuguese, Spanish, Dutch, Polish and Czech.";
+    dct:publisher <http://www.orphadata.org>;
+    dct:subject <http://edamontology.org/topic_3325>.
+<http://www.orphadata.org> rdf:type foaf:Organization;
+    foaf:name "Orphadata".
