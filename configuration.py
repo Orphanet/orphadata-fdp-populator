@@ -6,8 +6,8 @@ INPUT_EXCEL_FILE = 'input/FAIRData.xlsx'
 
 # Change this url when u deploy in the server
 FDP_SERVER_URL = 'http://95.142.173.26:8090'
-FDP_ADMIN_USER = "albert.einstein@example.com"
-FDP_ADMIN_PASSWORD = "QhG)z43MYyh4,4Jf"
+FDP_ADMIN_USER = "ADD_FDP_USER"
+FDP_ADMIN_PASSWORD = "ADD_PASSWORD"
 
 CATALOG_POST_URL_SUFFIX = 'catalog'
 DATASET_POST_URL_SUFFIX = 'dataset'
