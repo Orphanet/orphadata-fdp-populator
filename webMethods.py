@@ -5,7 +5,7 @@ import FDPClient
 import configuration
 
 FDP_CLIENT = FDPClient.FDPClient(configuration.FDP_SERVER_URL, configuration.FDP_ADMIN_USER,
-                                 configuration.FDP_ADMIN_PASSWORD)
+                                 configuration.FDP_ADMIN_PASSWORD, configuration.FDP_SERVER_P_URL)
 
 """
 Method to create and publish new metadata in the FDP
@@ -43,7 +43,7 @@ def create_catalogs(catalog_matrix):
         catalogContent = catalog_template.replace('TITLE' , title )
         catalogContent = catalogContent.replace('VERSION' , version )
         catalogContent = catalogContent.replace('DESCRIPTION', description)
-        catalogContent = catalogContent.replace('PARENT_IRI', configuration.FDP_SERVER_URL)
+        catalogContent = catalogContent.replace('PARENT_IRI', configuration.FDP_SERVER_P_URL)
         catalog_uris[catalog] = __create_metadata__(catalogContent, configuration.CATALOG_POST_URL_SUFFIX)
     return catalog_uris
 
