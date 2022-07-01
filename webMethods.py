@@ -40,14 +40,9 @@ def create_catalogs(catalog_matrix):
         title = catalog_matrix[catalog]['Title']
         version = catalog_matrix[catalog]['Version']
         description = catalog_matrix[catalog]['Description']
-        taxonomy = ''
-        for uri in catalog_matrix[catalog]['theme_taxonomy__uri']:
-            taxonomy += '<' + uri + '>,'
-        taxonomy = taxonomy[:-1]
         catalogContent = catalog_template.replace('TITLE' , title )
         catalogContent = catalogContent.replace('VERSION' , version )
         catalogContent = catalogContent.replace('DESCRIPTION', description)
-        catalogContent = catalogContent.replace('THEME_TAXOMOMY_IRI', taxonomy)
         catalogContent = catalogContent.replace('PARENT_IRI', configuration.FDP_SERVER_URL)
         catalog_uris[catalog] = __create_metadata__(catalogContent, configuration.CATALOG_POST_URL_SUFFIX)
     return catalog_uris

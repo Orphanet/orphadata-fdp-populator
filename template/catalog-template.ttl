@@ -11,9 +11,7 @@
     dct:isPartOf <PARENT_IRI>;
     dct:hasVersion "VERSION";
     dct:publisher <http://www.orphadata.org>;
-    dct:description "DESCRIPTION";
-    dcat:themeTaxonomy THEME_TAXOMOMY_IRI.
-
+    dct:description "DESCRIPTION".
 
 <http://www.orphadata.org> rdf:type foaf:Organization;
     foaf:name "Orphadata".
