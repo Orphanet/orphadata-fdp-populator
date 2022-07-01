@@ -14,8 +14,6 @@ def getCatalogMatrix(xlsfile):
                                                        'Description': ''}
         fair_catalog_matrix[catalog['Id'][index]]['Title'] = catalog['Title'][index]
         fair_catalog_matrix[catalog['Id'][index]]['Version'] = catalog['Version'][index]
-        for theme_taxonomy__uri in catalog['theme_taxonomy__uri'][index].split(';'):
-            fair_catalog_matrix[catalog['Id'][index]]['theme_taxonomy__uri'].append(theme_taxonomy__uri)
         fair_catalog_matrix[catalog['Id'][index]]['Description'] = catalog['Description'][index]
         index += 1
     return fair_catalog_matrix
